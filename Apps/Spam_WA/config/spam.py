@@ -4,7 +4,7 @@ from datetime import datetime
 os.system("mode con: cols=48 lines=17")
 def dir():
     os.chdir("C:\\Users\\Gas\\Desktop\\Tools")
-    os.system("python Apps\\Spam_WA\\config\\spam_wa.py")
+    os.system("python Apps\\Spam_WA\\config\\spam.py")
 def back():
     os.chdir("C:\\Users\\Gas\\Desktop\\Tools")
     os.system("Apps\\Spam_WA\\spam_wa.bat")

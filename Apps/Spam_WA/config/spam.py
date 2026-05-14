@@ -3,11 +3,11 @@ import time, os
 from datetime import datetime
 os.system("mode con: cols=48 lines=17")
 def dir():
-    os.chdir("C:\\Users\\Gas\\Desktop\\Tools")
-    os.system("python Apps\\Spam_WA\\config\\spam.py")
+    os.chdir(r"C:\Users\Gas\Desktop\Tools-V1.4")
+    os.system(r"python Apps\Spam_WA\config\spam.py")
 def back():
-    os.chdir("C:\\Users\\Gas\\Desktop\\Tools")
-    os.system("Apps\\Spam_WA\\spam_wa.bat")
+    os.chdir(r"C:\Users\Gas\Desktop\Tools-V1.4")
+    os.system(r"Apps\Spam_WA\spam_wa.bat")
 
 msg = input("\n * Masukan Pesan : ")
 

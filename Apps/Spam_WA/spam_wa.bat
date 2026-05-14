@@ -1,10 +1,10 @@
 @echo off
 chcp 65001>nul
-set spam=%~dp0config\spam.py
-set kembali=%~dp0..\..\config\hecking.bat
+set "spam=%~dp0config\spam.py"
+set "kembali=%~dp0..\..\config\hecking.bat"
 for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do set ESC=%%b
-title Spam WA ^| By : Raia Shop
-mode con: cols=90 lines=15
+title Spam WA ^| By : BDA Project
+mode con: cols=90 lines=17
 
 :menu
 echo                                                                 ^|
@@ -17,10 +17,12 @@ echo %ESC%[38;5;226m   ╚══════╝╚═╝     ╚═╝  ╚═�
 echo ==========================================================================================
 echo.
 echo    [1] Masuk
-echo    [2] Kembali
+echo    [2] Test spam
+echo    [3] Kembali
 echo    [E] Keluar
 echo.
-choice /c 12e /n /m "|  [>] "
-if %errorlevel%==1 python "%spam%"
-if %errorlevel%==2 call "%kembali%"
-if %errorlevel%==3 exit
+choice /c 123e /n /m "|  [>] "
+if %errorlevel%==1 python %spam%
+if %errorlevel%==2 start notepad & python %spam%
+if %errorlevel%==3 call %kembali%
+if %errorlevel%==4 exit

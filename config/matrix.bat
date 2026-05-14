@@ -6,4 +6,3 @@ start hecking.bat
 cd ..\..\
 color a
 dir/s
-exit

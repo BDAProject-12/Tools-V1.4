@@ -18,11 +18,9 @@ echo ===========================================================================
 echo.
 echo    [1] Masuk
 echo    [2] Test spam
-echo    [3] Kembali
-echo    [E] Keluar
+echo    [e] Kembali
 echo.
-choice /c 123e /n /m "|  [>] "
+choice /c 12e /n /m "|  [>] "
 if %errorlevel%==1 python %spam%
 if %errorlevel%==2 start notepad & python %spam%
 if %errorlevel%==3 call %kembali%
-if %errorlevel%==4 exit

@@ -5,7 +5,7 @@ chcp 65001>nul
 set "kembali=%~dp0..\OS_Mini.bat"
 set "spam=%~dp0..\Apps\Spam_WA\spam_wa.bat"
 set "matrix=%~dp0matrix.bat"
-set "terminal=%~dp0..\custom-terminal-V2\Terminal.bat"
+set "terminal=%~dp0..\..\custom-terminal-V2\Terminal.bat"
 
 for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do set ESC=%%b
 title Hecking ^| By : BDA Project

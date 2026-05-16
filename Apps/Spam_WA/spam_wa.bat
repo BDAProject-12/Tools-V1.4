@@ -18,7 +18,7 @@ echo ===========================================================================
 echo.
 echo    [1] Masuk
 echo    [2] Test spam
-echo    [e] Kembali
+echo    [E] Kembali
 echo.
 choice /c 12e /n /m "|  [>] "
 if %errorlevel%==1 python %spam%
